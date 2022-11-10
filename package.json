@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JuanmaLujan2212/44715JuanLujan.git"
+    "url": "git+https://github.com/JuanmaLujan2212/44715Lujan.git"
   },
   "author": "Juanma",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JuanmaLujan2212/44715JuanLujan/issues"
+    "url": "https://github.com/JuanmaLujan2212/44715Lujan/issues"
   },
-  "homepage": "https://github.com/JuanmaLujan2212/44715JuanLujan#readme",
+  "homepage": "https://github.com/JuanmaLujan2212/44715Lujan#readme",
   "devDependencies": {
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
