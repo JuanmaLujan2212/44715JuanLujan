@@ -1,0 +1,221 @@
+@import "variables.scss";
+header {
+	padding-top: 15px;
+	background-color: $Main-color;
+	.busqueda {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 15px;
+		.logo {
+			img {
+				@include sizes(200px, 50px);
+				margin-left: 15px;
+			}
+		}
+		#Searchbar {
+			@include sizes(700px, 20px);
+			padding-top: 4px;
+			margin-left: 15px;
+			margin-right: 15px;
+			
+		}
+		.login {
+			img {
+				@include sizes(50px, 50px);
+				margin-right: 15px;
+			}
+		}
+	}
+	.navbar {
+		height: 50px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		background-color: $Second-color;
+		#lista1 {
+			li {
+				display: inline;
+				padding-left: 70px;
+				a {
+					font: $title-font;
+					text-decoration: none;
+					color: black;
+					padding-left: 10px;
+					padding-right: 10px;
+					transition: background-color .5s;
+					border-radius: 4px;
+					&:hover {
+						background-color: whitesmoke;
+					}
+				}
+			}
+		}
+	}
+}
+.Productos {
+	h1 {
+		font: $title-font;
+		text-align: center;
+		margin-top: 45px;
+		margin-bottom: 30px;
+	}
+	.ImgProd {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding-top: 25px;
+		padding-bottom: 30px;
+		img {
+			transition: transform .2s;
+			@include sizes(150px, 200px);
+			&:hover {
+				transform: scale(1.5);
+			}
+		}
+	}
+}
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 20px;
+	margin-top: 30px;
+	background-color: $Main-color;
+	.Footerinfo {
+		h2 {
+			font: $title-font;
+			padding-bottom: 10px;
+			margin-top: 20px;
+		}
+		text-align: center;
+		width: 230px;
+		margin-bottom: 30px;
+	}
+}
+.formulario {
+    margin-top: 150px;
+	padding: 3px;
+	h1 {
+		font: $title-font;
+		text-align: center;
+		color: $Main-color;
+		font-size: 40px;
+	}
+	input {
+		font-size: 20px;
+		padding: 10px;
+		width: 100%;
+		border: none;
+	}
+	.contenedor {
+		width: 100%;
+		padding: 15px;
+		.input-contenedor {
+			margin-bottom: 15px;
+			border: 1px solid #aaa;
+		}
+		.button {
+			border: none;
+			width: 100%;
+			color: white;
+			font-size: 20px;
+			background: $Second-color;
+			padding: 15px 20px;
+			border-radius: 5px;
+			&:hover {
+				background: $Main-color;
+			}
+		}
+		p {
+			text-align: center;
+			padding-top: 5px;
+		}
+		.link {
+			text-decoration: none;
+			color: $Main-color;
+			font-weight: 600;
+			&:hover {
+				color: $Second-color;
+			}
+		}
+	}
+}
+@media (max-width:1000px) {
+	header {
+		.busqueda {
+			.logo {
+				img {
+					@include sizes(75px, 25px);
+				}
+			}
+			#Searchbar {
+				input {
+					height: 25px;
+				}
+			}
+			.login {
+				img {
+					@include sizes(30px, 30px);
+				}
+			}
+		}
+		.navbar {
+			height: 65px;
+			#lista1 {
+				padding-top: 6px;
+				li {
+					padding-left: 0px;
+					padding-right: 0px;
+					a {
+						font-size: 20px;
+						padding-left: 5px;
+						padding-right: 5px;
+					}
+				}
+			}
+			text-align: center;
+			padding-top: 0px;
+			padding-right: 15px;
+		}
+	}
+	.Productos {
+		h1 {
+			font-size: 20px;
+			margin-top: 15px;
+			margin-bottom: 0px;
+		}
+		.ImgProd {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.ImgProd img{
+			margin-top: 20px;
+			
+		}
+	}
+	footer {
+		display: block;
+		h2 {
+			font-size: 20px;
+		}
+		.Footerinfo {
+			margin: 0 auto;
+			font-size: 15px;
+			padding-bottom: 5px;
+		}
+		.ImgProd {
+			img {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+@media (min-width:768px) {
+	.formulario {
+		margin: auto;
+		width: 500px;
+		margin-top: 150px;
+		border-radius: 2%;
+	}
+}
+
