@@ -1,0 +1,26 @@
+{
+  "name": "proyectocoder",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u00004\u00004\u00007\u00001\u00005\u0000L\u0000u\u0000j\u0000a\u0000n\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/Styles.scss Styles/Styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanmaLujan2212/44715JuanLujan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuanmaLujan2212/44715JuanLujan/issues"
+  },
+  "homepage": "https://github.com/JuanmaLujan2212/44715JuanLujan#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}

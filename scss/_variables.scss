@@ -1,6 +1,7 @@
 $title-font: normal 30px Arial;
-$Main-color: #c7b373;
-$Second-color: #d9c78f;
+$Main-color: #131921;
+$Second-color: #232f3e;
+$Main-font-color: white;
 @mixin sizes($width, $height){
 	height: $height;
 	width: $width;

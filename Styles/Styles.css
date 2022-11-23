@@ -1,6 +1,6 @@
 header {
   padding-top: 15px;
-  background-color: #c7b373; }
+  background-color: #131921; }
   header .busqueda {
     display: flex;
     justify-content: space-between;
@@ -24,14 +24,14 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #d9c78f; }
+    background-color: #232f3e; }
     header .navbar #lista1 li {
       display: inline;
       padding-left: 70px; }
       header .navbar #lista1 li a {
         font: normal 30px Arial;
         text-decoration: none;
-        color: black;
+        color: white;
         padding-left: 10px;
         padding-right: 10px;
         transition: background-color .5s;
@@ -58,29 +58,13 @@ header {
     .Productos .ImgProd img:hover {
       transform: scale(1.5); }
 
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-top: 20px;
-  margin-top: 30px;
-  background-color: #c7b373; }
-  footer .Footerinfo {
-    text-align: center;
-    width: 230px;
-    margin-bottom: 30px; }
-    footer .Footerinfo h2 {
-      font: normal 30px Arial;
-      padding-bottom: 10px;
-      margin-top: 20px; }
-
 .formulario {
   margin-top: 150px;
   padding: 3px; }
   .formulario h1 {
     font: normal 30px Arial;
     text-align: center;
-    color: #c7b373;
+    color: #131921;
     font-size: 40px; }
   .formulario input {
     font-size: 20px;
@@ -98,20 +82,71 @@ footer {
       width: 100%;
       color: white;
       font-size: 20px;
-      background: #d9c78f;
+      background: #232f3e;
       padding: 15px 20px;
       border-radius: 5px; }
       .formulario .contenedor .button:hover {
-        background: #c7b373; }
+        background: #131921; }
     .formulario .contenedor p {
       text-align: center;
       padding-top: 5px; }
     .formulario .contenedor .link {
       text-decoration: none;
-      color: #c7b373;
+      color: #131921;
       font-weight: 600; }
       .formulario .contenedor .link:hover {
-        color: #d9c78f; }
+        color: #232f3e; }
+
+footer {
+  width: 100%;
+  background-color: #131921;
+  margin-top: 40px; }
+  footer h1 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white; }
+  footer .container-columnas {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px; }
+    footer .container-columnas img {
+      width: 27px;
+      height: 27px;
+      margin-right: 4px; }
+    footer .container-columnas .rowf {
+      display: flex;
+      font-size: 18px;
+      margin-top: 10px;
+      color: white; }
+      footer .container-columnas .rowf .link {
+        color: royalblue;
+        text-decoration: none; }
+        footer .container-columnas .rowf .link:hover {
+          color: white; }
+    footer .container-columnas .columna1 {
+      width: 360px; }
+      footer .container-columnas .columna1 p {
+        font-size: 16px;
+        color: white; }
+    footer .container-columnas .columna2 {
+      width: 360px; }
+      footer .container-columnas .columna2 .RedesSociales {
+        width: 220px;
+        margin: auto; }
+    footer .container-columnas .columna3 {
+      width: 360px; }
+      footer .container-columnas .columna3 .Contactos {
+        width: 220px;
+        margin: auto; }
+  footer .container-subfooter {
+    display: flex;
+    background-color: #232f3e;
+    justify-content: center;
+    color: white; }
+    footer .container-subfooter p {
+      text-align: center;
+      margin: 0px; }
 
 @media (max-width: 1000px) {
   header .busqueda .logo img {
@@ -145,16 +180,32 @@ footer {
     padding-bottom: 10px; }
   .Productos .ImgProd img {
     margin-top: 20px; }
-  footer {
-    display: block; }
-    footer h2 {
-      font-size: 20px; }
-    footer .Footerinfo {
-      margin: 0 auto;
-      font-size: 15px;
-      padding-bottom: 5px; }
-    footer .ImgProd img {
-      margin-bottom: 15px; } }
+  footer .container-columnas {
+    width: 360px;
+    margin: auto;
+    display: block;
+    padding-bottom: 30px; }
+    footer .container-columnas .rowf {
+      font-size: 16px; }
+    footer .container-columnas img {
+      width: 20px;
+      height: 20px; }
+    footer .container-columnas .columna1 .InfoFooter {
+      width: 300px;
+      margin: auto; }
+      footer .container-columnas .columna1 .InfoFooter p {
+        text-align: center;
+        font-size: 14px; }
+    footer .container-columnas .columna2 {
+      margin-top: 30px; }
+      footer .container-columnas .columna2 .RedesSociales {
+        width: 190px; }
+    footer .container-columnas .columna3 {
+      margin-top: 30px; }
+      footer .container-columnas .columna3 .Contactos {
+        width: 190px; }
+  footer .container-subfooter p {
+    font-size: 14px; } }
 
 @media (min-width: 768px) {
   .formulario {

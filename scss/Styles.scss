@@ -39,7 +39,7 @@ header {
 				a {
 					font: $title-font;
 					text-decoration: none;
-					color: black;
+					color: white;
 					padding-left: 10px;
 					padding-right: 10px;
 					transition: background-color .5s;
@@ -72,24 +72,6 @@ header {
 				transform: scale(1.5);
 			}
 		}
-	}
-}
-footer {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	padding-top: 20px;
-	margin-top: 30px;
-	background-color: $Main-color;
-	.Footerinfo {
-		h2 {
-			font: $title-font;
-			padding-bottom: 10px;
-			margin-top: 20px;
-		}
-		text-align: center;
-		width: 230px;
-		margin-bottom: 30px;
 	}
 }
 .formulario {
@@ -140,6 +122,76 @@ footer {
 		}
 	}
 }
+
+footer {
+	width: 100%;
+	background-color: $Main-color;
+	margin-top: 40px;
+	h1 {
+		font-size: 22px;
+		text-align: center;
+		margin-bottom: 20px;
+		color: $Main-font-color;
+	}
+	.container-columnas {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 15px;
+		img {
+			width: 27px;
+			height: 27px;
+			margin-right: 4px;
+		}
+		.rowf {
+			display: flex;
+			font-size: 18px;
+			margin-top: 10px;
+			color: $Main-font-color;
+			.link{
+				color: royalblue;
+				text-decoration: none;
+				&:hover{
+					color: $Main-font-color;
+				}
+			}
+		}
+		.columna1 {
+			width: 360px;
+			p {
+				font-size: 16px;
+				color: $Main-font-color;
+			}
+		}
+		.columna2 {
+			width: 360px;
+			.RedesSociales {
+				width: 220px;
+				margin: auto;
+			}
+		}
+		.columna3 {
+			width: 360px;
+			.Contactos {
+				width: 220px;
+				margin: auto;
+			}
+		}
+	}
+	.container-subfooter {
+		display: flex;
+		background-color: $Second-color;
+		justify-content: center;
+		color: $Main-font-color;
+		p {
+			text-align: center;
+			margin: 0px;
+		}
+		
+	}
+}
+
+
+
 @media (max-width:1000px) {
 	header {
 		.busqueda {
@@ -194,19 +246,47 @@ footer {
 		}
 	}
 	footer {
-		display: block;
-		h2 {
-			font-size: 20px;
-		}
-		.Footerinfo {
-			margin: 0 auto;
-			font-size: 15px;
-			padding-bottom: 5px;
-		}
-		.ImgProd {
-			img {
-				margin-bottom: 15px;
+		.container-columnas {
+			width: 360px;
+			margin: auto;
+			display: block;
+			padding-bottom: 30px;
+			.rowf{
+				font-size: 16px;
 			}
+			img{
+				width: 20px;
+				height: 20px;
+			}
+
+			.columna1 {
+				.InfoFooter{
+				width: 300px;	
+				margin: auto;
+				p {
+					text-align: center;
+					font-size: 14px;
+				}
+				}		
+			}
+			.columna2 {
+				margin-top: 30px;
+				.RedesSociales{
+					width: 190px;
+				}
+			}
+			.columna3 {			
+				margin-top: 30px;	
+				.Contactos{
+					width: 190px;
+				}	
+			}
+		}
+		.container-subfooter {
+			p {
+				font-size: 14px;
+			}
+			
 		}
 	}
 }
@@ -219,3 +299,4 @@ footer {
 	}
 }
 
+ 
